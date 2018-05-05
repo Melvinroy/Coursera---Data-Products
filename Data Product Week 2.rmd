@@ -1,0 +1,22 @@
+---
+title: "Week 2 Assignment"
+author: "Melvin"
+date: "May 6, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+library(leaflet)
+
+India <- c("<a href= 'https://en.wikipedia.org/wiki/India' >India</a>")
+leaflet() %>%
+addTiles() %>%
+addMarkers(lat=20.5937, lng=78.9629, popup = India)
+
+```
